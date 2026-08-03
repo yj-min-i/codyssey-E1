@@ -312,3 +312,34 @@ CONTAINER ID   IMAGE          COMMAND                   CREATED       STATUS    
 97ff82844ceb   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   my-web-8081
 c2cae3341148   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-8080
 8bffcd28cce2   ubuntu:22.04   "bash"                    2 hours ago   Up 2 hours                                                       my-ubuntu
+NAME                        IMAGE          COMMAND                   SERVICE   CREATED        STATUS                                     PORTS
+codyssey-mission1-cache-1   redis:alpine   "docker-entrypoint.s…"   cache     1 second ago   Up Less than a second                      6379/tcp
+codyssey-mission1-web-1     my-web:1.0     "/docker-entrypoint.…"   web       1 second ago   Up Less than a second (health: starting)   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp
+web-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+web-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+web-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+web-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+web-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+web-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: using the "epoll" event method
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: nginx/1.31.3
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: OS: Linux 6.17.8-orbstack-00308-g8f9c941121b1
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 20480:1048576
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker processes
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 30
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 31
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 32
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 33
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 34
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker process 35
+PING cache (192.168.97.3): 56 data bytes
+64 bytes from 192.168.97.3: seq=0 ttl=64 time=0.055 ms
+64 bytes from 192.168.97.3: seq=1 ttl=64 time=0.068 ms
+
+--- cache ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.055/0.061/0.068 ms

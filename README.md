@@ -38,6 +38,7 @@ codyssey-mission1/
 - [x] 바인드 마운트 변경 반영 (8082)
 - [x] Docker 볼륨 영속성 검증 (컨테이너 삭제 전/후)
 - [x] Git 설정 + GitHub 저장소 연동 + VSCode 연동
+- [x] (보너스) Docker Compose 멀티 컨테이너 + 서비스 디스커버리 확인
 
 ## 5) 검증 방법 요약
 | 항목 | 검증 명령 | 확인한 내용 | 증거 위치 |
@@ -364,3 +365,53 @@ open http://localhost:8080
 5. **Docker 볼륨** — 컨테이너 생명주기와 분리된 저장 공간으로,
    컨테이너를 삭제해도 데이터가 유지된다.
 6. **Git / GitHub** — Git은 로컬 버전관리 도구, GitHub은 원격 백업·공유·협업 플랫폼.
+
+## 11) 보너스 — Docker Compose 기초 / 멀티 컨테이너
+Docker Compose로 웹 서버(`web`)와 보조 서비스(`cache`) 2개 컨테이너를 함께 실행하고,
+서비스 이름만으로 컨테이너 간 네트워크 통신이 가능한지 확인했다.
+
+```yaml
+services:
+  web:
+    build: .
+    image: my-web:1.0
+    ports:
+      - "8090:80"
+    volumes:
+      - ./site:/usr/share/nginx/html
+    environment:
+      - APP_ENV=dev
+  cache:
+    image: redis:alpine
+```
+
+```bash
+$ docker compose up -d
+[+] Running 3/3
+ ✔ Network codyssey-mission1_default    Created
+ ✔ Container codyssey-mission1-cache-1  Started
+ ✔ Container codyssey-mission1-web-1    Started
+
+$ docker compose ps
+NAME                        IMAGE          SERVICE   STATUS                                     PORTS
+codyssey-mission1-cache-1   redis:alpine   cache     Up                                          6379/tcp
+codyssey-mission1-web-1     my-web:1.0     web       Up (healthy)                                0.0.0.0:8090->80/tcp
+
+$ docker compose logs web
+web-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: nginx/1.31.3
+web-1  | 2026/08/03 11:34:23 [notice] 1#1: start worker processes
+
+$ docker exec -it $(docker compose ps -q web) sh -lc "ping -c 2 cache"
+PING cache (192.168.97.3): 56 data bytes
+64 bytes from 192.168.97.3: seq=0 ttl=64 time=0.055 ms
+64 bytes from 192.168.97.3: seq=1 ttl=64 time=0.068 ms
+
+--- cache ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.055/0.061/0.068 ms
+```
+
+배움 포인트: 길게 외우던 `docker run` 옵션들이 파일로 문서화된 실행 설정이 되어
+재현이 쉬워졌다. 또한 서비스 이름(`cache`)만으로 컨테이너를 찾아 통신할 수 있었는데(0% packet loss),
+이는 Compose가 자동으로 만드는 내부 네트워크의 서비스 디스커버리 덕분이다.

@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    image: my-web:1.0
+    ports:
+      - "8090:80"
+    volumes:
+      - ./site:/usr/share/nginx/html
+    environment:
+      - APP_ENV=dev
+  cache:
+    image: redis:alpine
