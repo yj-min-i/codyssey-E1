@@ -38,3 +38,277 @@ credential.helper=osxkeychain
 user.name=yj-min-i
 user.email=bellayjm06@naver.com
 init.defaultbranch=main
+ Containers: 5
+ Images: 4
+ Server Version: 28.5.2
+ Operating System: OrbStack
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>Codyssey Mission 1</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:60px">
+  <h1>Codyssey Mission 1 ✅</h1>
+  <p>Docker로 띄운 나의 첫 웹 서버</p>
+  <p id="v">version: 1</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>Codyssey Mission 1</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:60px">
+  <h1>Codyssey Mission 1 ✅</h1>
+  <p>Docker로 띄운 나의 첫 웹 서버</p>
+  <p id="v">version: 1</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>Codyssey Mission 1</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:60px">
+  <h1>Codyssey Mission 1 ✅</h1>
+  <p>Docker로 띄운 나의 첫 웹 서버</p>
+  <p id="v">version: 2 (bind mount 반영!)</p>
+</body>
+</html>
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+192.168.215.1 - - [03/Aug/2026:09:17:54 +0000] "GET / HTTP/1.1" 200 317 "-" "curl/8.7.1" "-"
+::1 - - [03/Aug/2026:09:18:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:18:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+192.168.215.1 - - [03/Aug/2026:09:18:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" "-"
+192.168.215.1 - - [03/Aug/2026:09:18:55 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost:8082/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" "-"
+::1 - - [03/Aug/2026:09:19:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:19:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:20:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:20:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:21:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:21:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:22:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:22:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:23:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:23:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:24:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:24:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:25:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:25:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:26:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:26:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:27:24 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:27:54 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:28:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:28:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:29:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:29:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:30:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:30:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:31:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:31:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:32:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:32:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:33:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:33:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:34:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:34:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:35:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:35:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:36:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:36:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:37:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:37:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:38:25 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:38:55 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:39:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:39:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:40:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:40:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:41:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:41:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:42:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:42:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:43:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:43:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:44:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:44:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:45:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:45:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:46:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:46:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:47:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:47:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:48:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:48:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:49:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:49:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:50:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:50:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:51:26 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:51:56 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:52:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:52:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:53:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:53:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:54:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:54:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:55:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:55:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:56:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:56:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:57:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:57:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:58:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:58:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:59:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:09:59:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:00:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:00:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:01:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:01:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:02:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:02:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:03:27 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:03:57 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:04:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:04:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:05:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:05:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:06:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:06:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:07:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:07:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:08:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:08:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:09:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:09:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:10:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:10:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:11:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:11:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:12:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:12:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:13:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:13:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:14:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:14:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:15:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:15:58 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:16:28 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:16:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:17:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:17:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:18:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:18:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:19:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:19:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:20:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:20:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:21:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:21:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:22:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:22:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:23:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:23:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:24:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:24:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:25:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:25:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:26:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:26:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:27:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:27:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:28:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:28:59 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:29:29 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:30:00 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:30:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:31:00 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:31:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:32:00 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:32:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+192.168.215.1 - - [03/Aug/2026:10:32:51 +0000] "GET / HTTP/1.1" 200 317 "-" "curl/8.7.1" "-"
+CONTAINER ID   NAME           CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+4ae2df0656e7   my-web-mount   0.00%     5.691MiB / 15.67GiB   0.04%     4.98kB / 4.21kB   9.56MB / 8.19kB   7
+97ff82844ceb   my-web-8081    0.00%     5.719MiB / 15.67GiB   0.04%     5.08kB / 3.98kB   11.5MB / 8.19kB   7
+c2cae3341148   my-web-8080    0.00%     5.844MiB / 15.67GiB   0.04%     5.76kB / 5.02kB   29.2MB / 8.19kB   7
+8bffcd28cce2   my-ubuntu      0.00%     568KiB / 15.67GiB     0.00%     2.18kB / 126B     9.25MB / 0B       1
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+::1 - - [03/Aug/2026:10:33:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:34:00 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:34:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:35:00 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+::1 - - [03/Aug/2026:10:35:30 +0000] "GET / HTTP/1.1" 200 317 "-" "Wget" "-"
+/
+bin   dev  home  lib32	libx32	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 lib64	media	opt  root  sbin  sys  usr
+안녕 컨테이너
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+/Users/bellayjm061635/codyssey-mission1/practice
+total 16
+drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 17:27 .
+drwxr-xr-x  8 bellayjm061635  bellayjm061635  256  8  3 18:41 ..
+-rw-r--r--  1 bellayjm061635  bellayjm061635   15  8  3 17:17 hello.txt
+drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 17:27 mydir
+-rw-r--r--  1 bellayjm061635  bellayjm061635   28  8  3 17:27 run.sh
+drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 17:18 sub
+hello codyssey
+total 24
+drwxr-xr-x  7 bellayjm061635  bellayjm061635  224  8  3 19:45 .
+drwxr-xr-x  8 bellayjm061635  bellayjm061635  256  8  3 18:41 ..
+-rw-r--r--  1 bellayjm061635  bellayjm061635   15  8  3 19:45 hello_copy.txt
+-rw-r--r--  1 bellayjm061635  bellayjm061635   15  8  3 19:45 hello.txt
+drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 17:27 mydir
+-rw-r--r--  1 bellayjm061635  bellayjm061635   28  8  3 17:27 run.sh
+drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 17:18 sub
+total 8
+drwxr-xr-x  3 bellayjm061635  bellayjm061635   96  8  3 19:45 .
+drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 19:45 ..
+-rw-r--r--  1 bellayjm061635  bellayjm061635   15  8  3 19:45 renamed.txt
+total 0
+drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 19:45 .
+drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 19:45 ..
+/Users/bellayjm061635/codyssey-mission1
+/Users/bellayjm061635/codyssey-mission1/practice
+/Users/bellayjm061635/codyssey-mission1
+my-web        1.0       4e1fbdb30488   1 second ago   62.4MB
+CONTAINER ID   IMAGE          COMMAND                   CREATED       STATUS                 PORTS                                     NAMES
+4ae2df0656e7   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   my-web-mount
+97ff82844ceb   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   my-web-8081
+c2cae3341148   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-8080
+8bffcd28cce2   ubuntu:22.04   "bash"                    2 hours ago   Up 2 hours                                                       my-ubuntu
