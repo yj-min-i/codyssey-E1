@@ -1,0 +1,40 @@
+Docker version 28.5.2, build ecc6942
+git version 2.53.0
+ProductName:		macOS
+ProductVersion:		15.7.4
+BuildVersion:		24G517
+/bin/zsh
+Docker version 28.5.2, build ecc6942
+git version 2.53.0
+/Users/bellayjm061635/codyssey-mission1
+total 8
+drwxr-xr-x   6 bellayjm061635  bellayjm061635  192  8  3 18:02 .
+drwxr-x---+ 24 bellayjm061635  bellayjm061635  768  8  3 18:36 ..
+-rw-r--r--   1 bellayjm061635  bellayjm061635  237  8  3 18:02 Dockerfile
+drwxr-xr-x   4 bellayjm061635  bellayjm061635  128  8  3 17:13 docs
+drwxr-xr-x   6 bellayjm061635  bellayjm061635  192  8  3 17:27 practice
+drwxr-xr-x   3 bellayjm061635  bellayjm061635   96  8  3 18:17 site
+FROM nginx:alpine
+LABEL org.opencontainers.image.title=my-web
+LABEL maintainer=yj-min-i
+ENV APP_ENV=dev
+COPY site/ /usr/share/nginx/html/
+EXPOSE 80
+HEALTHCHECK --interval=30s --timeout=3s CMD wget -q --spider http://localhost/ || exit 1
+REPOSITORY    TAG       IMAGE ID       CREATED          SIZE
+my-web        1.0       6602f1c40bc8   33 minutes ago   62.4MB
+nginx         alpine    f0ba77f796e5   2 weeks ago      62.4MB
+ubuntu        22.04     b8e6b596a324   4 weeks ago      78.1MB
+hello-world   latest    e2ac70e7319a   4 months ago     10.1kB
+CONTAINER ID   IMAGE          COMMAND                   CREATED             STATUS                         PORTS                                     NAMES
+4ae2df0656e7   my-web:1.0     "/docker-entrypoint.…"   18 minutes ago      Up 18 minutes (healthy)        0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   my-web-mount
+97ff82844ceb   my-web:1.0     "/docker-entrypoint.…"   29 minutes ago      Up 29 minutes (healthy)        0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   my-web-8081
+c2cae3341148   my-web:1.0     "/docker-entrypoint.…"   29 minutes ago      Up 29 minutes (healthy)        0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-8080
+8bffcd28cce2   ubuntu:22.04   "bash"                    About an hour ago   Up 58 minutes                                                            my-ubuntu
+bb920726c1af   hello-world    "/hello"                  About an hour ago   Exited (0) About an hour ago                                             affectionate_dubinsky
+DRIVER    VOLUME NAME
+local     mydata
+credential.helper=osxkeychain
+user.name=yj-min-i
+user.email=bellayjm06@naver.com
+init.defaultbranch=main
