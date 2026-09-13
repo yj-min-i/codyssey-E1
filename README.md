@@ -16,7 +16,7 @@
 
 ## 3) 폴더 구조
 ```
-codyssey-mission1/
+codyssey-E1/
 ├── README.md
 ├── Dockerfile
 ├── .gitignore
@@ -55,9 +55,9 @@ codyssey-mission1/
 
 ### 6-1. 터미널 기본 조작
 ```bash
-$ cd ~/codyssey-mission1/practice
+$ cd ~/codyssey-E1/practice
 $ pwd
-/Users/bellayjm061635/codyssey-mission1/practice
+/Users/bellayjm061635/codyssey-E1/practice
 $ ls -la
 total 16
 drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 17:27 .
@@ -97,19 +97,19 @@ total 0
 drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 19:45 .
 drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 19:45 ..
 
-$ cd ~/codyssey-mission1
+$ cd ~/codyssey-E1
 $ pwd
-/Users/bellayjm061635/codyssey-mission1
+/Users/bellayjm061635/codyssey-E1
 
 $ cd practice
 $ pwd
-/Users/bellayjm061635/codyssey-mission1/practice
+/Users/bellayjm061635/codyssey-E1/practice
 
 $ cd ..
 $ pwd
-/Users/bellayjm061635/codyssey-mission1
+/Users/bellayjm061635/codyssey-E1
 ```
-절대경로는 `/Users/.../codyssey-mission1` 처럼 최상위부터의 전체 주소라 현재 위치와 무관하게
+절대경로는 `/Users/.../codyssey-E1` 처럼 최상위부터의 전체 주소라 현재 위치와 무관하게
 같은 곳을 가리키고, 상대경로는 `site`, `../practice` 처럼 현재 위치를 기준으로 해석된다.
 
 ### 6-2. 권한 변경 (전 / 후)
@@ -337,8 +337,8 @@ GitHub은 그 저장소를 원격에 두고 백업·공유·협업(PR, 이슈)�
 
 ## 8) 재현 방법
 ```bash
-git clone https://github.com/yj-min-i/codyssey-mission1.git
-cd codyssey-mission1
+git clone https://github.com/yj-min-i/codyssey-E1.git
+cd codyssey-E1
 docker build -t my-web:1.0 .
 docker run -d -p 8080:80 --name my-web-8080 my-web:1.0
 open http://localhost:8080
@@ -388,14 +388,14 @@ services:
 ```bash
 $ docker compose up -d
 [+] Running 3/3
- ✔ Network codyssey-mission1_default    Created
- ✔ Container codyssey-mission1-cache-1  Started
- ✔ Container codyssey-mission1-web-1    Started
+ ✔ Network codyssey-E1_default    Created
+ ✔ Container codyssey-E1-cache-1  Started
+ ✔ Container codyssey-E1-web-1    Started
 
 $ docker compose ps
 NAME                        IMAGE          SERVICE   STATUS                                     PORTS
-codyssey-mission1-cache-1   redis:alpine   cache     Up                                          6379/tcp
-codyssey-mission1-web-1     my-web:1.0     web       Up (healthy)                                0.0.0.0:8090->80/tcp
+codyssey-E1-cache-1   redis:alpine   cache     Up                                          6379/tcp
+codyssey-E1-web-1     my-web:1.0     web       Up (healthy)                                0.0.0.0:8090->80/tcp
 
 $ docker compose logs web
 web-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
