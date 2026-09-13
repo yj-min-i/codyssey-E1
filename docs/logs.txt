@@ -6,7 +6,7 @@ BuildVersion:		24G517
 /bin/zsh
 Docker version 28.5.2, build ecc6942
 git version 2.53.0
-/Users/bellayjm061635/codyssey-mission1
+/Users/bellayjm061635/codyssey-E1
 total 8
 drwxr-xr-x   6 bellayjm061635  bellayjm061635  192  8  3 18:02 .
 drwxr-x---+ 24 bellayjm061635  bellayjm061635  768  8  3 18:36 ..
@@ -279,7 +279,7 @@ SUPPORT_URL="https://help.ubuntu.com/"
 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 UBUNTU_CODENAME=jammy
-/Users/bellayjm061635/codyssey-mission1/practice
+/Users/bellayjm061635/codyssey-E1/practice
 total 16
 drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 17:27 .
 drwxr-xr-x  8 bellayjm061635  bellayjm061635  256  8  3 18:41 ..
@@ -303,9 +303,9 @@ drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 19:45 ..
 total 0
 drwxr-xr-x  2 bellayjm061635  bellayjm061635   64  8  3 19:45 .
 drwxr-xr-x  6 bellayjm061635  bellayjm061635  192  8  3 19:45 ..
-/Users/bellayjm061635/codyssey-mission1
-/Users/bellayjm061635/codyssey-mission1/practice
-/Users/bellayjm061635/codyssey-mission1
+/Users/bellayjm061635/codyssey-E1
+/Users/bellayjm061635/codyssey-E1/practice
+/Users/bellayjm061635/codyssey-E1
 my-web        1.0       4e1fbdb30488   1 second ago   62.4MB
 CONTAINER ID   IMAGE          COMMAND                   CREATED       STATUS                 PORTS                                     NAMES
 4ae2df0656e7   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   my-web-mount
@@ -313,8 +313,8 @@ CONTAINER ID   IMAGE          COMMAND                   CREATED       STATUS    
 c2cae3341148   6602f1c40bc8   "/docker-entrypoint.…"   2 hours ago   Up 2 hours (healthy)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-8080
 8bffcd28cce2   ubuntu:22.04   "bash"                    2 hours ago   Up 2 hours                                                       my-ubuntu
 NAME                        IMAGE          COMMAND                   SERVICE   CREATED        STATUS                                     PORTS
-codyssey-mission1-cache-1   redis:alpine   "docker-entrypoint.s…"   cache     1 second ago   Up Less than a second                      6379/tcp
-codyssey-mission1-web-1     my-web:1.0     "/docker-entrypoint.…"   web       1 second ago   Up Less than a second (health: starting)   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp
+codyssey-E1-cache-1   redis:alpine   "docker-entrypoint.s…"   cache     1 second ago   Up Less than a second                      6379/tcp
+codyssey-E1-web-1     my-web:1.0     "/docker-entrypoint.…"   web       1 second ago   Up Less than a second (health: starting)   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp
 web-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 web-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
 web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
